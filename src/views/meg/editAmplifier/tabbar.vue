@@ -2,10 +2,10 @@
   <div class="Container">
     <TabbarContainer
       class="ToggleVisibility"
-      footerText="Toggle Visibility"
+      footerText="切换可见性"
       :containerWidth="85"
     >
-      <LabelButton footerText="Show All">
+      <LabelButton footerText="显示全部">
         <template #icon>
           <SvgIcon name="show all" />
         </template>
@@ -13,15 +13,15 @@
     </TabbarContainer>
     <TabbarContainer
       class="ImportExport"
-      footerText="Import & Export"
+      footerText="导入 & 导出"
       :containerWidth="138"
     >
-      <LabelButton footerText="Import">
+      <LabelButton footerText="导入文件">
         <template #icon>
           <SvgIcon name="import" />
         </template>
       </LabelButton>
-      <LabelButton footerText="Export">
+      <LabelButton footerText="导出文件">
         <template #icon>
           <SvgIcon name="export" />
         </template>

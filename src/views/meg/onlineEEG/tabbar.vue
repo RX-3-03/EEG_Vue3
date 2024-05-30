@@ -1,6 +1,6 @@
 <template>
   <!-- Display窗体 -->
-  <TabbarContainer class="ToggleVisibility" footerText="Display">
+  <TabbarContainer class="ToggleVisibility" footerText="显示">
     <div class="selectDiv">
       <MySelectBox :options="options1" allow-clear :width="180" v-model="selectedValue1" @change="onChange" />
       <h2 class="selectboxfooter1">Montage</h2>
@@ -14,39 +14,39 @@
     </LabelButton>
     <div class="selectDiv">
       <MySelectBox :options="options5" allow-clear :width="140" v-model="selectedValue5" @change="onChange" />
-      <h2 class="selectboxfooter2">Displayed Channels</h2>
+      <h2 class="selectboxfooter2">通道显示</h2>
       <MySelectBox :options="options6" allow-clear :width="140" v-model="selectedValue6" @change="onChange" />
-      <h2 class="selectboxfooter2">Display Time Span</h2>
+      <h2 class="selectboxfooter2">显示时间跨度</h2>
     </div>
-    <LabelButton footerText="DC Removal">
+    <LabelButton footerText="去除DC">
       <template #icon>
         <SvgIcon name="Removal" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Freeze View">
+    <LabelButton footerText="冻结视图">
       <template #icon>
         <SvgIcon name="snow" />
       </template>
     </LabelButton>
   </TabbarContainer>
   <!-- Channel Selection窗体 -->
-  <TabbarContainer class="ImportExport" footerText="Channel Selection">
-    <LabelButton footerText="Unselect All">
+  <TabbarContainer class="ImportExport" footerText="通道选择">
+    <LabelButton footerText="取消所有选择">
       <template #icon>
         <SvgIcon name="list" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Invert Selection">
+    <LabelButton footerText="反转选择">
       <template #icon>
         <SvgIcon name="share-internal" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Select All">
+    <LabelButton footerText="选择全部">
       <template #icon>
         <SvgIcon name="select-all" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Hide Selected">
+    <LabelButton footerText="隐藏选择">
       <template #icon>
         <SvgIcon name="hide" />
       </template>
@@ -58,7 +58,7 @@
     </LabelButton>
   </TabbarContainer>
   <!-- filter窗体 -->
-  <TabbarContainer class="ImportExport" footerText="Filter">
+  <TabbarContainer class="ImportExport" footerText="过滤器">
     <LabelButton footerText="Notch 50Hz">
       <template #icon>
         <SvgIcon name="notch" />
@@ -77,8 +77,8 @@
     </LabelButton>
   </TabbarContainer>
   <!-- Events窗体 -->
-  <TabbarContainer class="ImportExport" footerText="Events">
-    <LabelButton footerText="Show Events">
+  <TabbarContainer class="ImportExport" footerText="事件">
+    <LabelButton footerText="显示事件">
       <template #icon>
         <SvgIcon name="video-camera" />
       </template>
@@ -99,17 +99,17 @@
   </TabbarContainer>
   <!-- 蒙太奇窗体 -->
   <TabbarContainer class="ImportExport" footerText="Montage">
-    <LabelButton footerText="Save">
+    <LabelButton footerText="保存">
       <template #icon>
         <SvgIcon name="Save" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Save As">
+    <LabelButton footerText="另存为">
       <template #icon>
         <SvgIcon name="Save As" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Show inactive channels">
+    <LabelButton footerText="显示不活跃通道">
       <template #icon>
         <SvgIcon name="show_channnels" />
       </template>

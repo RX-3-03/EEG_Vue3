@@ -1,14 +1,14 @@
 <template>
   <TabbarContainer
     class="ImportExport"
-    footerText="输入和输出"
+    footerText="导入&导出"
   >
-    <LabelButton footerText="Import">
+    <LabelButton footerText="导入文件">
       <template #icon>
         <SvgIcon name="import" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Export">
+    <LabelButton footerText="导出文件">
       <template #icon>
         <SvgIcon name="export" />
       </template>

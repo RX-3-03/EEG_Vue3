@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <TabbarContainer class="EEGWorkFlows" footerText="EEG WorkFlows" :containerWidth="138">
+    <TabbarContainer class="EEGWorkFlows" footerText="EEG工作流" :containerWidth="138">
       <LabelButton footerText="Acquire">
         <template #icon>
           <SvgIcon name="acquire" />
@@ -12,7 +12,7 @@
         </template>
       </LabelButton>
     </TabbarContainer>
-    <TabbarContainer class="EEGWorkFlows" footerText="EEG WorkFlows" :containerWidth="280">
+    <TabbarContainer class="EEGWorkFlows" footerText="管理流程" :containerWidth="280">
       <LabelButton footerText="Subject & Recording">
         <template #icon>
           <SvgIcon name="subject" />

@@ -14,7 +14,7 @@
         </LabelButton>
       </div>
       <div class="checkbox-group">
-        <MyCheckBox text="点击取消/完成后重启工作流程" font-size="13px" :disabled=true />
+        <MyCheckBox text="点击取消/完成后重启流" font-size="13px" :disabled=true />
         <MyCheckBox text="点击取消/完成后回看工作流" font-size="13px" :disabled=true />
         <MyCheckBox text="点击取消/完成后重回工作流" font-size="13px" />
       </div>
@@ -33,7 +33,7 @@
         </LabelButton>
       </div>
     </MyCard>
-    <MyCard title="Annotations">
+    <MyCard title="标签">
       <label></label>
     </MyCard>
   </MySlider>

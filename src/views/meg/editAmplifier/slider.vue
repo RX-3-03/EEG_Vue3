@@ -1,7 +1,7 @@
 <template>
-  <MySlider class="contatiner" title="Edit Amplifier">
-    <MyCard title="Workflow Control">
-      <LabelButton footerText="Finalize">
+  <MySlider class="contatiner" title="编辑放大器">
+    <MyCard title="工作流控制">
+      <LabelButton footerText="完成">
         <template #icon>
           <SvgIcon name="finalize" />
         </template>
@@ -9,12 +9,12 @@
     </MyCard>
     <MyCard title="Amplifier Setup">
       <div  class="button-group">
-        <LabelButton footerText="New">
+        <LabelButton footerText="新建">
           <template #icon>
             <SvgIcon name="new" />
           </template>
         </LabelButton>
-        <LabelButton footerText="Delete">
+        <LabelButton footerText="删除">
           <template #icon>
             <SvgIcon name="delete" />
           </template>

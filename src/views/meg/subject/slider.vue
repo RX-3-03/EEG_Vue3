@@ -1,34 +1,34 @@
 <template>
-  <MySlider class="contatiner" title="Edit Amplifier">
-    <MyCard title="Workflow Control">
+  <MySlider class="contatiner" title="记录EEG">
+    <MyCard title="工作流控制 ">
       <div class="button-group">
-        <LabelButton footerText="Next">
+        <LabelButton footerText="下一步">
           <template #icon>
             <SvgIcon name="finalize" />
           </template>
         </LabelButton>
-        <LabelButton footerText="Cancel">
+        <LabelButton footerText="取消">
           <template #icon>
             <SvgIcon name="cancel" />
           </template>
         </LabelButton>
       </div>
     </MyCard>
-    <MyCard title="Selection">
+    <MyCard title="选择记录">
       <div>
         <h2 style="font-size: small">Subject</h2>
         <label style="background-color: gray; font-size: small"> Subject, Example, 1972-12-23 </label>
       </div>
       <br />
       <div class="button-group">
-        <LabelButton footerText="New">
+        <LabelButton footerText="新建">
           <template #icon>
             <SvgIcon name="new" />
           </template>
         </LabelButton>
       </div>
     </MyCard>
-    <MyCard title="Recording Parameters">
+    <MyCard title="记录参数">
       <div style="margin-bottom: 5px">
         <h2 style="font-size: small">Sampling Rate[Hz]</h2>
         <MySelectBox
@@ -60,8 +60,8 @@
         />
       </div>
     </MyCard>
-    <MyCard title="Sensors">
-      <MyCheckBox text="Use SpO2 Sensor" font-size="13px" />
+    <MyCard title="传感器">
+      <MyCheckBox text="使用SpO2传感器" font-size="13px" />
     </MyCard>
   </MySlider>
 </template>
