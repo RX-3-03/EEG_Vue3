@@ -80,6 +80,7 @@ const applicationOption = () => {
     <div class="layout_main">
       <Main />
     </div>
+    <div class="layout_footer"></div>
   </div>
 </template>
 
@@ -113,6 +114,14 @@ const applicationOption = () => {
     padding: 3px;
     gap: 8px;
   }
+  .layout_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
+    background-color: white;
+    border-top: 1px solid black;
+  }
   .layout_icon1 {
     position: fixed;
     top: calc($meg-menu-height + $meg-tabbar-height);
@@ -135,7 +144,7 @@ const applicationOption = () => {
     top: calc($meg-menu-height + $meg-tabbar-height + $meg-icon-height);
     width: 20px;
     left: $meg-slider-width;
-    bottom: 0;
+    bottom: 20px;
     height: calc(
       100vh - $meg-menu-height - $meg-tabbar-height - $meg-icon-height
     );
@@ -145,12 +154,10 @@ const applicationOption = () => {
     top: calc($meg-menu-height + $meg-tabbar-height + $meg-icon-height);
     left: calc($meg-slider-width + 20px);
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     width: calc(100vw - $meg-slider-width);
     height: calc(
-      100vh - $meg-menu-height - $meg-tabbar-height - $meg-icon-height
-    );
-
+      100vh - $meg-menu-height - $meg-tabbar-height - $meg-icon-height );
   }
 }
 </style>

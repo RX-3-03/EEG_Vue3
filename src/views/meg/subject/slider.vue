@@ -15,34 +15,54 @@
       </div>
     </MyCard>
     <MyCard title="Selection">
+      <div>
+        <h2 style="font-size: small">Subject</h2>
+        <label style="background-color: gray; font-size: small"> Subject, Example, 1972-12-23 </label>
+      </div>
+      <br />
       <div class="button-group">
         <LabelButton footerText="New">
           <template #icon>
             <SvgIcon name="new" />
           </template>
         </LabelButton>
-        <LabelButton footerText="Delete">
-          <template #icon>
-            <SvgIcon name="delete" />
-          </template>
-        </LabelButton>
       </div>
     </MyCard>
     <MyCard title="Recording Parameters">
-      <div>
-        <h2 class="selectboxfooter1">Sampling Rate[Hz]</h2>
-        <MySelectBox :options="options1" allow-clear :width="180" v-model="selectedValue1" @change="onChange" />
+      <div style="margin-bottom: 5px">
+        <h2 style="font-size: small">Sampling Rate[Hz]</h2>
+        <MySelectBox
+          :options="options1"
+          allow-clear
+          :width="180"
+          v-model="selectedValue1"
+          @change="onChange"
+        />
+      </div>
+      <div style="margin-bottom: 5px">
+        <h2 style="font-size: small">Amplifier Setup</h2>
+        <MySelectBox
+          :options="options2"
+          allow-clear
+          :width="180"
+          v-model="selectedValue2"
+          @change="onChange"
+        />
       </div>
       <div>
-        <h2 class="selectboxfooter1">Amplifier Setup</h2>
-        <MySelectBox :options="options2" allow-clear :width="180" v-model="selectedValue1" @change="onChange" />
-      </div>
-      <div>
-        <h2 class="selectboxfooter1">Montage Setup</h2>
-        <MySelectBox :options="options3" allow-clear :width="180" v-model="selectedValue1" @change="onChange" />
+        <h2 style="font-size: small">Montage Setup</h2>
+        <MySelectBox
+          :options="options3"
+          allow-clear
+          :width="180"
+          v-model="selectedValue3"
+          @change="onChange"
+        />
       </div>
     </MyCard>
-    <MyCard title="Sensors"></MyCard>
+    <MyCard title="Sensors">
+      <MyCheckBox text="Use SpO2 Sensor" font-size="13px" />
+    </MyCard>
   </MySlider>
 </template>
 <script setup lang="ts">
@@ -50,6 +70,7 @@ import MyCard from '@/views/meg/components/myCard.vue'
 import LabelButton from '@/views/meg/components/labelButton.vue'
 import MySlider from '@/views/meg/components/mySlider.vue'
 import MySelectBox from '../components/MySelectBox.vue'
+import MyCheckBox from '@/views/meg/components/myCheckBox.vue'
 import { ref, watchEffect } from 'vue'
 
 const options1 = ref([

@@ -2,7 +2,7 @@
   <div class="checkbox">
     <el-checkbox-group v-model="checkList" size="small">
       <el-checkbox
-        label="Restart Workflow on Cancel or Finalize"
+        label="Use SpO2 sensor"
         value="Value A"
       />
       <el-checkbox label="Review recorded data on Finalize" value="Value B" />
