@@ -1,10 +1,7 @@
 <template>
   <div class="checkbox">
     <el-checkbox-group v-model="checkList" size="small">
-      <el-checkbox
-        label="Use SpO2 sensor"
-        value="Value A"
-      />
+      <el-checkbox label="Use SpO2 sensor" value="Value A" />
       <el-checkbox label="Review recorded data on Finalize" value="Value B" />
       <el-checkbox
         label="Back to Workflow selection on Cancel or Finalize"

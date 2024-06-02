@@ -101,12 +101,14 @@ const draw = () => {
 
 <template>
   <el-tabs class="container" type="border-card">
-    <el-tab-pane label="OnlineEEG">
+    <el-tab-pane label="在线EEG测量">
       <el-scrollbar ref="canvasContainer" height="800px">
         <canvas class="eegVis" ref="canvasMegVis"></canvas>
       </el-scrollbar>
     </el-tab-pane>
-    <el-tab-pane label="脑电电极分布图"></el-tab-pane>
+    <el-tab-pane label="脑电电极分布图">
+      <img src="../../../assets/images/1.png" style="width: 1200px; margin-left: 100px" />
+    </el-tab-pane>
   </el-tabs>
 </template>
 

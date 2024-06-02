@@ -1,7 +1,7 @@
 <template>
   <div class="Container">
-    <TabbarContainer class="ToggleVisibility" footerText="Toggle Visibility" :containerWidth="85">
-      <LabelButton footerText="Detailed Parameters">
+    <TabbarContainer class="ToggleVisibility" footerText="可见性切换">
+      <LabelButton footerText="详细参数">
         <template #icon>
           <SvgIcon name="show all" />
         </template>

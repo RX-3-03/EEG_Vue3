@@ -39,7 +39,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.labelInput{
+.labelInput {
   display: flex;
   justify-content: space-between;
   align-items: center;

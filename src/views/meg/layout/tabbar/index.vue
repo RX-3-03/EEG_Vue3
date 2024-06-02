@@ -15,7 +15,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.tabberRouter{
+.tabberRouter {
   width: 100%;
   height: 100%;
 }

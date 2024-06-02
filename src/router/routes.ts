@@ -70,7 +70,7 @@ export const constantRoutes: Array<RouteRecordRaw> = [
           mainRouter: () => import('@/views/meg/subject/main.vue'),
         },
         meta: {
-          title: 'Subject and Recording',
+          title: '主题和记录',
           hidden: false,
           icon: 'Finished',
         },

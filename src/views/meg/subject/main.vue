@@ -102,14 +102,24 @@ const tableData2: Amplifier2[] = [
 <template>
   <el-tabs class="container" type="border-card">
     <el-tab-pane label="Subject and Recordings">
-      <el-table ref="singleTableRef" :data="tableData1" highlight-current-row style="width: 100%; top: 0"
+      <el-table
+        ref="singleTableRef"
+        :data="tableData1"
+        highlight-current-row
+        style="width: 100%; top: 0"
         @current-change="handleCurrentChange1"
       >
-        <el-table-column prop="Last_Name" label="Last_Name"></el-table-column>
-        <el-table-column prop="First_Name" label="First_Name"></el-table-column>
-        <el-table-column prop="Date_Of_Birth" label="Date Of Birth"></el-table-column>
-        <el-table-column prop="Last_Recording" label="Last Recording"></el-table-column>
-        <el-table-column label="Others"></el-table-column>
+        <el-table-column prop="Last_Name" label="姓"></el-table-column>
+        <el-table-column prop="First_Name" label="名"></el-table-column>
+        <el-table-column
+          prop="Date_Of_Birth"
+          label="出生日期"
+        ></el-table-column>
+        <el-table-column
+          prop="Last_Recording"
+          label="最后记录"
+        ></el-table-column>
+        <el-table-column label="其他"></el-table-column>
       </el-table>
       <el-table
         ref="singleTableRef"
@@ -119,13 +129,31 @@ const tableData2: Amplifier2[] = [
         class="table2"
         @current-change="handleCurrentChange2"
       >
-        <el-table-column prop="Recording_Date" label="记录日期"></el-table-column>
-        <el-table-column prop="Recording_Length" label="记录时长"></el-table-column>
+        <el-table-column
+          prop="Recording_Date"
+          label="记录日期"
+        ></el-table-column>
+        <el-table-column
+          prop="Recording_Length"
+          label="记录时长"
+        ></el-table-column>
         <el-table-column prop="Segments" label="片段数量"></el-table-column>
-        <el-table-column prop="Amplifier_Setup" label="Amplifier Setup"></el-table-column>
-        <el-table-column prop="Sampling_Rate" label="Sampling Rate"></el-table-column>
-        <el-table-column prop="Total_Event_Count" label="Total Event Count"></el-table-column>
-        <el-table-column prop="Total_Video_Count" label="Total Video Count"></el-table-column>
+        <el-table-column
+          prop="Amplifier_Setup"
+          label="放大器设置"
+        ></el-table-column>
+        <el-table-column
+          prop="Sampling_Rate"
+          label="采样率"
+        ></el-table-column>
+        <el-table-column
+          prop="Total_Event_Count"
+          label="时间总数"
+        ></el-table-column>
+        <el-table-column
+          prop="Total_Video_Count"
+          label="视频总数"
+        ></el-table-column>
         <el-table-column prop="Notes" label="Notes"></el-table-column>
       </el-table>
     </el-tab-pane>

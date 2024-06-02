@@ -19,10 +19,12 @@ export default defineComponent({
 <template>
   <div class="option-card">
     <div class="option-header">
-      <span :style="{ fontSize: titleFontSize + 'px' }" style="margin: 3px;">{{ title }}</span>
+      <span :style="{ fontSize: titleFontSize + 'px' }" style="margin: 3px">
+        {{ title }}
+      </span>
     </div>
-    <div class="option-content" >
-        <slot></slot>
+    <div class="option-content">
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -49,7 +51,7 @@ export default defineComponent({
     border-radius: 2px;
   }
   .option-content {
-    padding:5px;
+    padding: 5px;
     //display: flex;
     width: 100%;
     align-items: center;

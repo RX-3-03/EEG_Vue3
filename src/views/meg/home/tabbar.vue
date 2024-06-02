@@ -1,34 +1,42 @@
 <template>
   <div class="container">
-    <TabbarContainer class="EEGWorkFlows" footerText="EEG工作流" :containerWidth="138">
-      <LabelButton footerText="Acquire">
+    <TabbarContainer
+      class="EEGWorkFlows"
+      footerText="EEG工作流"
+      :containerWidth="138"
+    >
+      <LabelButton footerText="导入">
         <template #icon>
           <SvgIcon name="acquire" />
         </template>
       </LabelButton>
-      <LabelButton footerText="Review & Export">
+      <LabelButton footerText="回放 & 导出">
         <template #icon>
           <SvgIcon name="review" />
         </template>
       </LabelButton>
     </TabbarContainer>
-    <TabbarContainer class="EEGWorkFlows" footerText="管理流程" :containerWidth="280">
-      <LabelButton footerText="Subject & Recording">
+    <TabbarContainer
+      class="EEGWorkFlows"
+      footerText="管理工作流"
+      :containerWidth="280"
+    >
+      <LabelButton footerText="主题 & 记录">
         <template #icon>
           <SvgIcon name="subject" />
         </template>
       </LabelButton>
-      <LabelButton footerText="Edit Montage">
+      <LabelButton footerText="编辑模板">
         <template #icon>
           <SvgIcon name="montage" />
         </template>
       </LabelButton>
-      <LabelButton footerText="Edit Amplifier" @click="goEditAmplifier">
+      <LabelButton footerText="编辑放大器" @click="goEditAmplifier">
         <template #icon>
           <SvgIcon name="Amplifier" />
         </template>
       </LabelButton>
-      <LabelButton footerText="Edit Annotations">
+      <LabelButton footerText="编辑标签">
         <template #icon>
           <SvgIcon name="annotations" />
         </template>

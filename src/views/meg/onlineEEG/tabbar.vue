@@ -2,9 +2,21 @@
   <!-- Display窗体 -->
   <TabbarContainer class="ToggleVisibility" footerText="显示">
     <div class="selectDiv">
-      <MySelectBox :options="options1" allow-clear :width="180" v-model="selectedValue1" @change="onChange" />
-      <h2 class="selectboxfooter1">Montage</h2>
-      <MySelectBox :options="options2" allow-clear :width="100" v-model="selectedValue2" @change="onChange" />
+      <MySelectBox
+        :options="options1"
+        allow-clear
+        :width="180"
+        v-model="selectedValue1"
+        @change="onChange"
+      />
+      <h2 class="selectboxfooter1">模板</h2>
+      <MySelectBox
+        :options="options2"
+        allow-clear
+        :width="100"
+        v-model="selectedValue2"
+        @change="onChange"
+      />
       <h2 class="selectboxfooter1">Scale[uV]</h2>
     </div>
     <LabelButton>
@@ -13,12 +25,24 @@
       </template>
     </LabelButton>
     <div class="selectDiv">
-      <MySelectBox :options="options5" allow-clear :width="140" v-model="selectedValue5" @change="onChange" />
+      <MySelectBox
+        :options="options5"
+        allow-clear
+        :width="140"
+        v-model="selectedValue5"
+        @change="onChange"
+      />
       <h2 class="selectboxfooter2">通道显示</h2>
-      <MySelectBox :options="options6" allow-clear :width="140" v-model="selectedValue6" @change="onChange" />
+      <MySelectBox
+        :options="options6"
+        allow-clear
+        :width="140"
+        v-model="selectedValue6"
+        @change="onChange"
+      />
       <h2 class="selectboxfooter2">显示时间跨度</h2>
     </div>
-    <LabelButton footerText="去除DC">
+    <LabelButton footerText="移除DC">
       <template #icon>
         <SvgIcon name="Removal" />
       </template>
@@ -31,17 +55,17 @@
   </TabbarContainer>
   <!-- Channel Selection窗体 -->
   <TabbarContainer class="ImportExport" footerText="通道选择">
-    <LabelButton footerText="取消所有选择">
+    <LabelButton footerText="取消全选">
       <template #icon>
         <SvgIcon name="list" />
       </template>
     </LabelButton>
-    <LabelButton footerText="反转选择">
+    <LabelButton footerText="反选">
       <template #icon>
         <SvgIcon name="share-internal" />
       </template>
     </LabelButton>
-    <LabelButton footerText="选择全部">
+    <LabelButton footerText="全选">
       <template #icon>
         <SvgIcon name="select-all" />
       </template>
@@ -51,7 +75,7 @@
         <SvgIcon name="hide" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Zoom on Selected">
+    <LabelButton footerText="放大选中区域">
       <template #icon>
         <SvgIcon name="zoom" />
       </template>
@@ -65,9 +89,19 @@
       </template>
     </LabelButton>
     <div>
-      <MySelectBox :options="options3" allow-clear v-model="selectedValue3" @change="onChange" />
+      <MySelectBox
+        :options="options3"
+        allow-clear
+        v-model="selectedValue3"
+        @change="onChange"
+      />
       <h2 class="selectboxfooter2">Low Cutoff[Hz]</h2>
-      <MySelectBox :options="options4" allow-clear v-model="selectedValue4" @change="onChange" />
+      <MySelectBox
+        :options="options4"
+        allow-clear
+        v-model="selectedValue4"
+        @change="onChange"
+      />
       <h2 class="selectboxfooter2">High Cutoff[Hz]</h2>
     </div>
     <LabelButton>
@@ -85,20 +119,20 @@
     </LabelButton>
   </TabbarContainer>
   <!-- Scroll窗体 -->
-  <TabbarContainer class="ImportExport" footerText="Scroll">
-    <LabelButton footerText="Scroll Up">
+  <TabbarContainer class="ImportExport" footerText="滚动">
+    <LabelButton footerText="向上">
       <template #icon>
         <SvgIcon name="up" />
       </template>
     </LabelButton>
-    <LabelButton footerText="Scroll Down">
+    <LabelButton footerText="向下">
       <template #icon>
         <SvgIcon name="down" />
       </template>
     </LabelButton>
   </TabbarContainer>
   <!-- 蒙太奇窗体 -->
-  <TabbarContainer class="ImportExport" footerText="Montage">
+  <TabbarContainer class="ImportExport" footerText="模板">
     <LabelButton footerText="保存">
       <template #icon>
         <SvgIcon name="Save" />

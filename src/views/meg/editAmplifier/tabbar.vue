@@ -2,7 +2,7 @@
   <div class="Container">
     <TabbarContainer
       class="ToggleVisibility"
-      footerText="切换可见性"
+      footerText="可见性切换"
       :containerWidth="85"
     >
       <LabelButton footerText="显示全部">
@@ -16,12 +16,12 @@
       footerText="导入 & 导出"
       :containerWidth="138"
     >
-      <LabelButton footerText="导入文件">
+      <LabelButton footerText="导入">
         <template #icon>
           <SvgIcon name="import" />
         </template>
       </LabelButton>
-      <LabelButton footerText="导出文件">
+      <LabelButton footerText="导出">
         <template #icon>
           <SvgIcon name="export" />
         </template>

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="tabbarContainer"
-  >
+  <div class="tabbarContainer">
     <div class="content">
       <slot></slot>
     </div>
@@ -24,8 +22,6 @@ export default defineComponent({
   },
 })
 </script>
-
-
 
 <style scoped lang="scss">
 .tabbarContainer {

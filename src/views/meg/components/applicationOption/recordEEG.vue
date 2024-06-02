@@ -19,11 +19,11 @@
       </div>
     </OptionCard>
     <OptionCard title="阻抗选项">
-      <div  class="labelInput">
+      <div class="labelInput">
         <p>最高阻抗:</p>
         <MyInput label-width="380"></MyInput>
       </div>
-      <div  class="labelInput">
+      <div class="labelInput">
         <p>最低阻抗:</p>
         <MyInput label-width="380"></MyInput>
       </div>
@@ -32,7 +32,7 @@
       </div>
     </OptionCard>
     <OptionCard title="记录设置">
-      <div  class="labelInput">
+      <div class="labelInput">
         <p>每个记录最大分片数量：</p>
         <MyInput label-width="310"></MyInput>
       </div>
@@ -60,7 +60,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.labelInput{
+.labelInput {
   display: flex;
   justify-content: space-between;
   align-items: center;
