@@ -2,7 +2,7 @@
   <MySlider title="记录控制">
     <MyCard title="工作流控制">
       <div class="button-group">
-        <LabelButton footerText="完成">
+        <LabelButton footerText="完成" @click="goRoute">
           <template #icon>
             <SvgIcon name="finalize" />
           </template>
@@ -51,6 +51,14 @@ import MyCard from '@/views/meg/components/myCard.vue'
 import LabelButton from '@/views/meg/components/labelButton.vue'
 import MySlider from '@/views/meg/components/mySlider.vue'
 import MyCheckBox from '@/views/meg/components/myCheckBox.vue'
+
+import { useRouter } from 'vue-router'
+
+let $router = useRouter()
+
+const goRoute = () => {
+  $router.push('/meg/subject')
+}
 </script>
 
 <style scoped lang="scss">

@@ -20,9 +20,9 @@ let $route = useRoute()
 const dialogFormVisible = ref(false)
 const applicationOption = () => {
   dialogFormVisible.value = true
-  MegSettingStore.fold = !MegSettingStore.fold
+  // MegSettingStore.fold = !MegSettingStore.fold
 }
-
+useMegSettingStore().fold = true
 let MegSettingStore = useMegSettingStore()
 
 </script>

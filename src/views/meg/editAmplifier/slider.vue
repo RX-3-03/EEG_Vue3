@@ -1,7 +1,7 @@
 <template>
   <MySlider class="contatiner" title="编辑放大器">
     <MyCard title="工作流控制">
-      <LabelButton footerText="Finalize">
+      <LabelButton footerText="完成" @click="goRoute">
         <template #icon>
           <SvgIcon name="finalize" />
         </template>
@@ -76,12 +76,17 @@ import MySlider from '@/views/meg/components/mySlider.vue'
 import MyInput from '@/views/meg/components/myInput.vue'
 import MySelectBox from '@/views/meg/components/MySelectBox.vue'
 import OptionButton from '@/views/meg/components/applicationOption/optionButton.vue'
-
+import { useRouter } from 'vue-router'
 import  { ref } from 'vue'
 
 const dialogFormVisible = ref(false)
 const createMontage = () => {
   dialogFormVisible.value = true
+}
+
+let $router = useRouter()
+const goRoute = () => {
+  $router.push('/meg/editMontage')
 }
 
 const options4 = ref([

@@ -49,10 +49,12 @@ import MyButton from '@/views/meg/components/myButton.vue'
 import TabbarContainer from '@/views/meg/components/tabbarContainer.vue'
 import LabelButton from '@/views/meg/components/labelButton.vue'
 import { useRouter } from 'vue-router'
+import useMegSettingStore from '@/store/modules/megSetting'
 
 let $router = new useRouter()
 const goEditAmplifier = (vc: any) => {
   $router.push('/meg/editAmplifier')
+  useMegSettingStore().fold = false
 }
 </script>
 

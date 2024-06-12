@@ -107,7 +107,7 @@ const tableData: Montage[] = [
 
 <template>
   <el-tabs class="container" type="border-card">
-    <el-tab-pane label="User">
+    <el-tab-pane label="采集模板">
       <el-table ref="singleTableRef" :data="tableData" highlight-current-row style="width: 100%"
         @current-change="handleCurrentChange">
         <el-table-column prop="name" label="Name"></el-table-column>

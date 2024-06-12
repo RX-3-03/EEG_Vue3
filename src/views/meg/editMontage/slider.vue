@@ -1,7 +1,7 @@
 <template>
   <MySlider title="采集模板设置">
     <MyCard title="工作流控制">
-      <LabelButton footerText="Finalize">
+      <LabelButton footerText="完成" @click="goRoute">
         <template #icon>
           <SvgIcon name="finalize" />
         </template>
@@ -77,8 +77,14 @@ import MyInput from '@/views/meg/components/myInput.vue'
 import MyCheckBox from '@/views/meg/components/myCheckBox.vue'
 import MySelectBox from '@/views/meg/components/MySelectBox.vue'
 import OptionButton from '@/views/meg/components/applicationOption/optionButton.vue'
-import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
+import { ref } from 'vue'
+let $router = useRouter()
+
+const goRoute = () => {
+  $router.push('/meg/subject')
+}
 const dialogFormVisible = ref(false)
 const createMontage = () => {
   dialogFormVisible.value = true

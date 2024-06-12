@@ -101,7 +101,7 @@ const tableData2: Amplifier2[] = [
 
 <template>
   <el-tabs class="container" type="border-card">
-    <el-tab-pane label="Subject and Recordings">
+    <el-tab-pane label="记录">
       <el-table
         ref="singleTableRef"
         :data="tableData1"

@@ -144,7 +144,7 @@ const tableData: Amplifier[] = [
 
 <template>
   <el-tabs class="container" type="border-card">
-    <el-tab-pane label="User">
+    <el-tab-pane label="放大器模板">
       <el-table
         ref="singleTableRef"
         :data="tableData"
